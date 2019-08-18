@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Button from './Components/Button';
+import styled from 'styled-components';
+import Section from './Components/Section';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Style>
+        <section class="App-header flex">
+          <div class="text">
+            Hi, I'm<span class="highlighted-text"> Nick Kazan </span>and I smol brain chad.
+          </div>
+          <a href="#experience" className="link">
+            <Button text="see my experience"/>
+          </a>
+        </section>
+        <section id="experience" class="flex">
+          <div>
+            <Section title="Experience"/>
+          </div>
+        </section>
+      </Style>
+    );
+  }
 }
+
+const Style = styled.div `
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+`
 
 export default App;
