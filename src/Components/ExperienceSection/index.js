@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import amazonLogo from "../../assets/white-amazon-logo.png";
+import govLogo from "../../assets/gov_of_canada.png";
 
 class ExperienceSection extends React.Component {
     render() {
@@ -22,10 +23,34 @@ class ExperienceSection extends React.Component {
                     Built, tested, and deployed a self-service portal for clients to manage users.
                   </div>
                   <div className="bullet text">
-                    Improved the speed of on-boarding corporate clients by 22%, while also reducinguser management support contacts by 47%.
+                    Improved the speed of on-boarding corporate clients by 22%, while also reducing user management support contacts by 47%.
                   </div>
                   <div className="bullet text">
-                    Designed a long-term, scalable architecture using many modern services includingDynamoDB, SNS, KMS, and SQS.                  
+                    Designed a long-term, scalable architecture using many modern services.                  
+                  </div>
+                  <div className="bullet text">
+                    Some of the services used include: AWS KMS, DynamoDB, SQS, SNS, etc.
+                  </div>
+                </div>
+              </div>
+
+              <div className="job">
+                <img src={govLogo} className="logo" alt="Government_of_Canada"/>
+                <div className="desc text">
+                  <div className="position text">
+                    Programmer Analyst
+                    <div className="date text">
+                      May 2018 - August 2018
+                    </div>
+                  </div>
+                  <div className="bullet text">
+                    Fixed ongoing client issues leading to a smoother experience in our Fall Release.
+                  </div>
+                  <div className="bullet text">
+                    Created software to organize all current client requests which improved efficiency by 30%.
+                  </div>
+                  <div className="bullet text">
+                    Refactored and redesigned older code.
                   </div>
                 </div>
               </div>
@@ -60,7 +85,7 @@ const StyledExperienceSection = styled.section `
   .job {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 0 0 50px 0;
   }
 
   .desc {
@@ -76,7 +101,7 @@ const StyledExperienceSection = styled.section `
     width: fit-content;
     margin: 0 auto;
     align-items: center;
-    padding: 0px 0 25px 0;
+    padding: 0px 0 50px 0;
     font-smooth: auto;
   }
 
