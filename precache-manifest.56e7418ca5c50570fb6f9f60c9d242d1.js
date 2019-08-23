@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df3a7088a770f9ac03bcb5fb58e88c42",
+    "revision": "6c59135e9f20e3c55aa0588fb7c24bc8",
     "url": "/index.html"
   },
   {
-    "revision": "d2ae6997d1d9749a1b7b",
+    "revision": "4f1b5f294a42b27a383d",
     "url": "/static/css/main.85ce5487.chunk.css"
   },
   {
-    "revision": "8c88eadfbef32272e2e4",
-    "url": "/static/js/2.6d349381.chunk.js"
+    "revision": "c479ddb34034c908e148",
+    "url": "/static/js/2.5ef1aa7d.chunk.js"
   },
   {
-    "revision": "d2ae6997d1d9749a1b7b",
-    "url": "/static/js/main.151b84a4.chunk.js"
+    "revision": "4f1b5f294a42b27a383d",
+    "url": "/static/js/main.54b0f78e.chunk.js"
   },
   {
     "revision": "8171ea1990bb2199d1cd",
     "url": "/static/js/runtime~main.8b8fb827.js"
+  },
+  {
+    "revision": "001c2e2015c10329266761a583918ee7",
+    "url": "/static/media/gov_of_canada.001c2e20.png"
   },
   {
     "revision": "8a0202e54a5dec12ead7937a8b422469",
