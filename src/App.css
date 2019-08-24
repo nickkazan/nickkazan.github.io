@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400&display=swap');
 
 .text {
-  font-size: 38px;
+  font-size: 20px;
   font-family: 'Merriweather Sans';
-  margin: 0px 0px 20px 0px;
+  margin: 0 auto;
 }
 
 .highlighted-text {
   color: #119DA4;
+}
+
+.footer {
+  text-decoration: none;
+  font-size: 8px;
+}
+
+.title {
+  font-size: 38px;
+  font-family: 'Merriweather Sans';
+  width: fit-content;
+  margin: 0 auto;
+  align-items: center;
+  padding: 25px 0 25px 0;
 }
 
 .app-header {
@@ -23,6 +37,7 @@
 
 .section-header {
   background-color: #323237;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

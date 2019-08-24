@@ -32,7 +32,7 @@ const StyledNavbar = styled.div `
   width: 100%;
   border-bottom: 1pt solid #119DA4;
   opacity: 1;
-  background-color: #323237;
+  background-color: #29292E;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -53,7 +53,6 @@ const StyledNavbar = styled.div `
     color: white;
     font-size: 20px;
     font-family: 'Merriweather Sans';
-    font-smooth: auto;
     display: block;
     padding: 15px 10px;
     margin: 0 15px;
