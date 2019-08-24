@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a9793208834b9a3e65e2e05d49d9b7f",
+    "revision": "7b0ff50b93abc30721f4e05de043b1ea",
     "url": "/index.html"
   },
   {
-    "revision": "b22d4ada4389ac3e7569",
+    "revision": "8aa206d318ab5b8cf90f",
     "url": "/static/css/main.73c0b2dd.chunk.css"
   },
   {
-    "revision": "889d1fb35289b68d6051",
-    "url": "/static/js/2.471c59f5.chunk.js"
+    "revision": "d12ef19886e425f8bac3",
+    "url": "/static/js/2.29ac84db.chunk.js"
   },
   {
-    "revision": "b22d4ada4389ac3e7569",
-    "url": "/static/js/main.c358c2e8.chunk.js"
+    "revision": "8aa206d318ab5b8cf90f",
+    "url": "/static/js/main.4bfafdc7.chunk.js"
   },
   {
     "revision": "8171ea1990bb2199d1cd",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9d171470265641b32e3c88dd2d5fb7a2",
     "url": "/static/media/github-logo.9d171470.png"
+  },
+  {
+    "revision": "001c2e2015c10329266761a583918ee7",
+    "url": "/static/media/gov_of_canada.001c2e20.png"
   },
   {
     "revision": "0536f0383b6311e880a706e15d0e26e7",
