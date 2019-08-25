@@ -27,7 +27,7 @@ const StyledContact = styled.section `
   .caption {
     align-items: center;
     width: fit-content;
-    padding: 40px;
+    padding: 40px 0 40px 0;
     text-decoration: none;
   }
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400&display=swap');
 
 .text {
-  font-size: 20px;
+  font-size: calc(8px + 1vw);
   font-family: 'Merriweather Sans';
   margin: 0 auto;
 }
@@ -10,13 +10,8 @@
   color: #119DA4;
 }
 
-.footer {
-  text-decoration: none;
-  font-size: 8px;
-}
-
 .title {
-  font-size: 38px;
+  font-size: calc(10px + 2vw);
   font-family: 'Merriweather Sans';
   width: fit-content;
   margin: 0 auto;

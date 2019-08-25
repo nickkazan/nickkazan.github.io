@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import MediaQuery from 'react-responsive';
 import amazonLogo from "../../assets/white-amazon-logo.png";
 import govLogo from "../../assets/gov_of_canada.png";
 
@@ -10,8 +11,13 @@ class ExperienceSection extends React.Component {
               <div className="title text">
                 {this.props.title}
               </div>
-              <div className="job">
+              <MediaQuery maxWidth={600}>
                 <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
+              </MediaQuery>
+              <div className="job">
+                <MediaQuery minWidth={600}>                 
+                  <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
+                </MediaQuery>
                 <div className="desc text">
                   <div className="position text">
                     SDE Intern
@@ -34,8 +40,13 @@ class ExperienceSection extends React.Component {
                 </div>
               </div>
 
-              <div className="job">
+              <MediaQuery maxWidth={600}>
                 <img src={govLogo} className="logo" alt="Government_of_Canada"/>
+              </MediaQuery>
+              <div className="job">
+                <MediaQuery minWidth={600}>                 
+                  <img src={govLogo} className="logo" alt="Government_of_Canada"/>
+                </MediaQuery>
                 <div className="desc text">
                   <div className="position text">
                     Programmer Analyst
@@ -67,19 +78,20 @@ const StyledExperienceSection = styled.section `
 
   .date {
     float: right;
-    font-size: 20px;
+    font-size: calc(8px + 1vw);
     margin: 0px 0px 10px 0px;
   }
 
   .position {
     color: #119DA4;
-    font-size: 20px;
+    font-size: calc(8px + 1vw);
     margin: 0px 0px 10px 0px;
   }
 
   .bullet {
-    font-size: 18px;
+    font-size: calc(6px + 1vw);
     margin: 0px 0px 10px 0px;
+    width: 100%;
   }
 
   .job {
@@ -98,9 +110,26 @@ const StyledExperienceSection = styled.section `
 
   .logo {
     display: block;
-    width: 192px;
-    height: 66px;
-    padding-right: 50px;
+    width: calc(60px + 9vw);
+    height: calc(20px + 3vw);
+    padding: 0 calc(12px + 2vw) 0 0;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    .logo {
+      display: block;
+      width: calc(60px + 9vw);
+      height: calc(20px + 3vw);
+      padding: 0 0 calc(12px + 1vw) 0;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .job {
+      margin: 0 0 25px 0;
+    }
   }
 
   .container {

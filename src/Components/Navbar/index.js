@@ -51,7 +51,7 @@ const StyledNavbar = styled.div `
   .navlink {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: calc(8px + 1vw);
     font-family: 'Merriweather Sans';
     display: block;
     padding: 15px 10px;

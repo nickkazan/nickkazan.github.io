@@ -40,8 +40,8 @@ const StyledIcons = styled.div `
   }
 
   .icon {
-    width: 100px;
-    height: 100px;
+    width: calc(50px + 4vw);
+    height: calc(50px + 4vw);
     margin: 25px;
   }
 `

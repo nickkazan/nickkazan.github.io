@@ -12,12 +12,14 @@ class Button extends React.Component {
 }
 
 const StyledButton = styled.div `
-    font-size: 24px;
+    font-size: calc(10px + 1vw);
     font-family: 'Merriweather Sans';
     border: 1px solid white;
     padding: 0.35em 1.2em;
     transition: all .3s;
     border-radius: 4px;
+    width: fit-content;
+
 
     :hover {
       color: white;
