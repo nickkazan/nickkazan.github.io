@@ -13,8 +13,11 @@ class App extends React.Component {
     return (
       <Style className="app-header flex">
         <section id="home" className="app-header flex">
-          <div className="title">
-            Hi, I'm<span className="highlighted-text"> Nick Kazan </span>and I'm a Software Engineer.
+          <div className="title main">
+            Hi, I'm<span className="highlighted-text"> Nick Kazan </span>
+          </div>
+          <div className="title main">
+            and I'm a Software Engineer.
           </div>
           <Link to="experience" spy={true} smooth={true}>
             <Button text="see my experience"/>
@@ -36,6 +39,10 @@ const Style = styled.div `
   .centered {
     justify-contents: center;
     align-items: center;
+  }
+
+  .main {
+    padding: 0;
   }
 `
 
