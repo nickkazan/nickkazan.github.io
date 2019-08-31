@@ -16,6 +16,7 @@ const StyledButton = styled.div `
     font-family: 'Merriweather Sans';
     border: 1px solid white;
     padding: 0.35em 1.2em;
+    margin-top: 25px;
     transition: all .3s;
     border-radius: 4px;
     width: fit-content;

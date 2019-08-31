@@ -12,7 +12,7 @@
 }
 
 .title {
-  font-size: calc(10px + 2vw);
+  font-size: calc(12px + 2vw);
   font-family: 'Merriweather Sans';
   width: fit-content;
   margin: 0 auto;

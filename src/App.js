@@ -37,6 +37,10 @@ const Style = styled.div `
     justify-contents: center;
     align-items: center;
   }
+
+  .main {
+    padding: 0;
+  }
 `
 
 export default App;
