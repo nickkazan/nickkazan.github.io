@@ -6,30 +6,27 @@ import NavBar from './Components/Navbar';
 import ExperienceSection from './Components/ExperienceSection';
 import Button from './Components/Button';
 import ContactSection from './Components/ContactSection';
+import AboutSection from './Components/AboutSection';
 
 class App extends React.Component {
 
   render() {
     return (
-      <Style className="app-header flex">
-        <section id="home" className="app-header flex">
-          <div className="title main">
-            Hi, I'm<span className="highlighted-text"> Nick Kazan </span>
-          </div>
-          <div className="title main">
-            and I'm a Software Engineer.
+      <Style className="light-header">
+        <section id="home" className="light-header">
+          <div className="title">
+            Hi, I'm<span className="highlighted-text"> Nick Kazan </span>and I'm a Software Developer.
           </div>
           <Link to="experience" spy={true} smooth={true}>
             <Button text="see my experience"/>
           </Link>
         </section>
         <NavBar/>
-        <section id="experience" className="section-header flex">
-          <ExperienceSection title="Experience"/>
-        </section>
-        <section id="contact" className="section-header flex centered">
-          <ContactSection title="Let's Get In Touch"/>
-        </section>
+
+        <ExperienceSection title="Experience"/>
+        <AboutSection title="About Me"/>
+        <ContactSection title="Let's Get In Touch"/>
+
       </Style>
     );
   }  

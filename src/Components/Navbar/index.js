@@ -36,6 +36,7 @@ const StyledNavbar = styled.div `
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  z-index: 9999;
 
   .link {
     text-decoration: none;
