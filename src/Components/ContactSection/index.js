@@ -5,7 +5,7 @@ import Icons from '../Icons';
 class Contact extends React.Component {
   render() {
     return (
-      <StyledContact>
+      <StyledContact id="contact" className="dark-header centered">
         <div className="title text">
           {this.props.title}
         </div>
@@ -19,10 +19,11 @@ class Contact extends React.Component {
 }
 
 const StyledContact = styled.section `
-  padding: 50px 50px 0 50px;
+  padding: calc(20px + 1vw) calc(20px + 2vw) 0 calc(20px + 2vw);
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
+  height: 100%;
 
   .caption {
     align-items: center;

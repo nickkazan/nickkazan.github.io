@@ -7,10 +7,11 @@ import govLogo from "../../assets/gov_of_canada.png";
 class ExperienceSection extends React.Component {
     render() {
         return (
-          <StyledExperienceSection>
+          <StyledExperienceSection id="experience" className="dark-header">
               <div className="title text">
                 {this.props.title}
               </div>
+
               <MediaQuery maxWidth={600}>
                 <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
               </MediaQuery>
@@ -71,7 +72,7 @@ class ExperienceSection extends React.Component {
 }
 
 const StyledExperienceSection = styled.section `
-  padding: 50px 50px 0 50px;
+  padding: calc(20px + 1vw) calc(20px + 2vw) 0 calc(20px + 2vw);
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
@@ -98,6 +99,7 @@ const StyledExperienceSection = styled.section `
     display: flex;
     flex-direction: row;
     margin: 0 0 50px 0;
+    width: 100%;
   }
 
   .desc {
