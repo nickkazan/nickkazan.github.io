@@ -91,19 +91,19 @@ const StyledExperienceSection = styled.section `
 
   .date {
     float: right;
-    font-size: calc(8px + 1vw);
+    font-size: calc(10px + 1vw);
     margin: 0px 0px 10px 0px;
     color: #119DA4
   }
 
   .position {
     color: #119DA4;
-    font-size: calc(8px + 1vw);
+    font-size: calc(10px + 1vw);
     margin: 0px 0px 10px 0px;
   }
 
   .bullet {
-    font-size: calc(6px + 1vw);
+    font-size: calc(8px + 1vw);
     margin: 0px 0px 10px 0px;
     width: 100%;
   }

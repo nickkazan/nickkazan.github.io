@@ -64,6 +64,8 @@ const StyledAboutSection = styled.section `
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 
   .skill-column {
     display: flex;
@@ -88,12 +90,12 @@ const StyledAboutSection = styled.section `
   }
 
   p {
-    font-size: calc(4px + 1vw);
+    font-size: calc(8px + 1vw);
     text-align: center;
   }
   
   h1 {
-    font-size: calc(10px + 1vw);
+    font-size: calc(12px + 1vw);
   }
 
   .left {

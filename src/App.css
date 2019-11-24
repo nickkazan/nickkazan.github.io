@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400&display=swap');
 
 .text {
-  font-size: calc(8px + 1vw);
+  font-size: calc(12px + 1vw);
   font-family: 'Merriweather Sans';
   margin: 0 auto;
   overflow-wrap: break-word;
@@ -13,7 +13,7 @@
 }
 
 .title {
-  font-size: calc(12px + 2vw);
+  font-size: calc(16px + 2vw);
   font-family: 'Merriweather Sans';
   color: black;
   width: fit-content;
