@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import MediaQuery from 'react-responsive';
-import amazonLogo from "../../assets/white-amazon-logo.png";
-import govLogo from "../../assets/gov_of_canada.png";
+import amazonLogo from "../../assets/black-amazon-logo.png";
+import govLogo from "../../assets/black_gov_of_canada.png";
+import Fade from 'react-reveal/Fade'; 
 
 class ExperienceSection extends React.Component {
     render() {
@@ -11,61 +12,72 @@ class ExperienceSection extends React.Component {
               <div className="title text">
                 {this.props.title}
               </div>
-
-              <MediaQuery maxWidth={600}>
-                <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
-              </MediaQuery>
-              <div className="job">
-                <MediaQuery minWidth={600}>                 
-                  <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
+              <Fade duration={1000} top>
+                <MediaQuery maxWidth={600}>
+                  <Fade duration={1000} top>
+                    <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
+                  </Fade>
                 </MediaQuery>
-                <div className="desc text">
-                  <div className="position text">
-                    SDE Intern
-                    <div className="date text">
-                      May 2019 - August 2019
+                <div className="job">
+                  <MediaQuery minWidth={600}>
+                    <Fade duration={1000} top>              
+                      <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
+                    </Fade>
+                  </MediaQuery>
+                  <div className="desc text">
+                    <div className="position text">
+                      SDE Intern
+                      <div className="date text">
+                        May 2019 - August 2019
+                      </div>
+                    </div>
+                    <div className="bullet text">
+                      Built, tested, and deployed a self-service portal for clients to manage users.
+                    </div>
+                    <div className="bullet text">
+                      Improved the speed of on-boarding corporate clients by 22%, while also reducing user management support contacts by 47%.
+                    </div>
+                    <div className="bullet text">
+                      Designed a long-term, scalable architecture using many modern services.                  
+                    </div>
+                    <div className="bullet text">
+                      Some of the services used include: AWS KMS, DynamoDB, SQS, SNS, etc.
                     </div>
                   </div>
-                  <div className="bullet text">
-                    Built, tested, and deployed a self-service portal for clients to manage users.
-                  </div>
-                  <div className="bullet text">
-                    Improved the speed of on-boarding corporate clients by 22%, while also reducing user management support contacts by 47%.
-                  </div>
-                  <div className="bullet text">
-                    Designed a long-term, scalable architecture using many modern services.                  
-                  </div>
-                  <div className="bullet text">
-                    Some of the services used include: AWS KMS, DynamoDB, SQS, SNS, etc.
-                  </div>
                 </div>
-              </div>
+              </Fade>
 
-              <MediaQuery maxWidth={600}>
-                <img src={govLogo} className="logo" alt="Government_of_Canada"/>
-              </MediaQuery>
-              <div className="job">
-                <MediaQuery minWidth={600}>                 
-                  <img src={govLogo} className="logo" alt="Government_of_Canada"/>
+              <Fade duration={1000} top>
+                <MediaQuery maxWidth={600}>
+                  <Fade duration={1000} top>
+                    <img src={govLogo} className="logo" alt="Government_of_Canada"/>
+                  </Fade>
                 </MediaQuery>
-                <div className="desc text">
-                  <div className="position text">
-                    Programmer Analyst
-                    <div className="date text">
-                      May 2018 - August 2018
+                <div className="job">
+                  <MediaQuery minWidth={600}>
+                    <Fade duration={1000} top>               
+                      <img src={govLogo} className="logo" alt="Government_of_Canada"/>
+                    </Fade>
+                  </MediaQuery>
+                  <div className="desc text">
+                    <div className="position text">
+                      Programmer Analyst
+                      <div className="date text">
+                        May 2018 - August 2018
+                      </div>
+                    </div>
+                    <div className="bullet text">
+                      Fixed ongoing client issues leading to a smoother experience in our Fall Release.
+                    </div>
+                    <div className="bullet text">
+                      Created software to organize all current client requests which improved efficiency by 30%.
+                    </div>
+                    <div className="bullet text">
+                      Refactored and redesigned older code.
                     </div>
                   </div>
-                  <div className="bullet text">
-                    Fixed ongoing client issues leading to a smoother experience in our Fall Release.
-                  </div>
-                  <div className="bullet text">
-                    Created software to organize all current client requests which improved efficiency by 30%.
-                  </div>
-                  <div className="bullet text">
-                    Refactored and redesigned older code.
-                  </div>
                 </div>
-              </div>
+              </Fade>
           </StyledExperienceSection>
         );
     }
@@ -81,6 +93,7 @@ const StyledExperienceSection = styled.section `
     float: right;
     font-size: calc(8px + 1vw);
     margin: 0px 0px 10px 0px;
+    color: #119DA4
   }
 
   .position {
@@ -113,7 +126,7 @@ const StyledExperienceSection = styled.section `
   .logo {
     display: block;
     width: calc(60px + 9vw);
-    height: calc(20px + 3vw);
+    height: 100%;
     padding: 0 calc(12px + 2vw) 0 0;
     align-items: center;
     margin: 0 auto;
@@ -123,7 +136,7 @@ const StyledExperienceSection = styled.section `
     .logo {
       display: block;
       width: calc(60px + 9vw);
-      height: calc(20px + 3vw);
+      height: 100%;
       padding: 0 0 calc(12px + 1vw) 0;
       align-items: center;
       margin: 0 auto;

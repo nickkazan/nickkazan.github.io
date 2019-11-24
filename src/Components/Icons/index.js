@@ -4,11 +4,13 @@ import InstaLogo from '../../Icons/InstaLogo';
 import FacebookLogo from '../../Icons/FacebookLogo';
 import LinkedInLogo from '../../Icons/LinkedinLogo';
 import GithubLogo from '../../Icons/GithubLogo';
+import HeadShake from 'react-reveal/HeadShake';
 
 class Icons extends React.Component {
   render() {
     return (
       <StyledIcons>
+        <HeadShake duration={1500}>
         <div className="icon-cluster">
           <a href="https://www.instagram.com/nickkazan" className="image-link" target="_blank" rel="noopener noreferrer">
             <InstaLogo className="icon" alt="insta_logo"/>
@@ -25,6 +27,7 @@ class Icons extends React.Component {
             <GithubLogo className="icon" alt="github_logo"/>
           </a>
         </div>
+        </HeadShake>
       </StyledIcons>
     )
   }
@@ -44,7 +47,7 @@ const StyledIcons = styled.div `
   }
 
   .icon {
-    stroke: #fff;
+    stroke: #000;
     fill: none;
     viewBox: 0 0 10 10;
   }

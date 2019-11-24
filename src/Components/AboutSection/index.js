@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 class AboutSection extends React.Component {
   render() {
@@ -8,50 +9,51 @@ class AboutSection extends React.Component {
         <div className="title text">
           {this.props.title}
         </div>
-        <div className="text skill-block">
-          <div className="skill-column left">
-            <div>
-              <h1>Proficient</h1>
+        <Fade duration={1000} cascade top>
+          <div className="text skill-block">
+            <div className="skill-column left">
+              <div>
+                <h1>Proficient</h1>
+              </div>
+              <div>
+                <p className="highlighted-text">Languages</p>
+                <p>Python, Java, Swift, Javascript</p>
+              </div>
+              <div>
+                <p className="highlighted-text">Technologies</p>
+                <p>AWS, Android, iOS, Git, JUnit, React Native</p>
+              </div>
             </div>
-            <div>
-              <p className="highlighted-text">Languages</p>
-              <p>Python, Java, Swift</p>
+
+            <div className="skill-column">
+              <div>
+                <h1>Familiar</h1>
+              </div>
+              <div>
+                <p className="highlighted-text">Languages</p>
+                <p>CSS, HTML5, SQL, C++, C</p>
+              </div>
+              <div>
+                <p className="highlighted-text">Technologies</p>
+                <p>Azure, ARKit, Linux, React, Node, Spring, Express, MongoDB</p>
+              </div>
             </div>
-            <div>
-              <p className="highlighted-text">Technologies</p>
-              <p>AWS, Android, iOS, Git, JUnit</p>
+
+            <div className="skill-column right">
+              <div>
+                <h1>Interested</h1>
+              </div>
+              <div>
+                <p className="highlighted-text">Languages</p>
+                <p>Go, Ruby, TypeScript, Kotlin</p>
+              </div>
+              <div>
+                <p className="highlighted-text">Technologies</p>
+                <p>ARCore, PyTorch, TensorFlow, Django, Angular, Unity</p>
+              </div>
             </div>
           </div>
-
-          <div className="skill-column">
-            <div>
-              <h1>Familiar</h1>
-            </div>
-            <div>
-              <p className="highlighted-text">Languages</p>
-              <p>Javascript, CSS, HTML5, SQL, C++, C</p>
-            </div>
-            <div>
-              <p className="highlighted-text">Technologies</p>
-              <p>Azure, ARKit, Linux, React Native, React, Node, Spring, Express, MongoDB</p>
-            </div>
-          </div>
-
-          <div className="skill-column right">
-            <div>
-              <h1>Interested</h1>
-            </div>
-            <div>
-              <p className="highlighted-text">Languages</p>
-              <p>Go, Ruby, TypeScript, Kotlin</p>
-            </div>
-            <div>
-              <p className="highlighted-text">Technologies</p>
-              <p>ARCore, PyTorch, TensorFlow, Django, Angular, Unity</p>
-            </div>
-          </div>
-
-        </div>
+        </Fade>
       </StyledAboutSection>
     )
   }
@@ -61,7 +63,7 @@ const StyledAboutSection = styled.section `
   padding: calc(20px + 1vw) calc(20px + 2vw) 0 calc(20px + 2vw);
   width: 100%;
   box-sizing: border-box;
-  justify-content: center;  
+  justify-content: center;
 
   .skill-column {
     display: flex;
@@ -82,7 +84,7 @@ const StyledAboutSection = styled.section `
     flex-direction: row;
     width: fit-content;
     position: relative;
-    background-color: #323237;
+    background-color: #FFFFFF;
   }
 
   p {
