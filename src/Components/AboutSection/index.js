@@ -1,6 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+import React from 'react'
+import styled from 'styled-components'
+import Fade from 'react-reveal/Fade'
+import MediaQuery from 'react-responsive'
+import pic1 from '../../assets/pic1.jpg'
+import pic2 from '../../assets/pic2.JPG'
+import pic3 from '../../assets/pic3.JPG'
+import pic4 from '../../assets/pic4.jpg'
 
 class AboutSection extends React.Component {
   render() {
@@ -9,9 +14,34 @@ class AboutSection extends React.Component {
         <div className="title text">
           {this.props.title}
         </div>
+
+        <div className="text desc">
+          <MediaQuery maxWidth={1000}>
+            <div className="life-images">
+              <img src={pic1} className="image" alt="nick kazan life pics"/>
+              <img src={pic2} className="image" alt="nick kazan life pics"/>
+            </div>
+            <div className="life-images">
+              <img src={pic3} className="image" alt="nick kazan life pics"/>
+              <img src={pic4} className="image" alt="nick kazan life pics"/>
+            </div>
+          </MediaQuery>
+          <MediaQuery minWidth={1000}>
+            <div className="life-images">
+              <img src={pic1} className="image" alt="nick kazan life pics"/>
+              <img src={pic2} className="image" alt="nick kazan life pics"/>
+              <img src={pic3} className="image" alt="nick kazan life pics"/>
+              <img src={pic4} className="image" alt="nick kazan life pics"/>
+            </div>
+          </MediaQuery>
+          <p>I'm a third year Computer Science student, with a minor in Entrepreneurship, studying at Carleton University! When I'm not programming,
+            you can catch me hiking, strumming my guitar, and going on adventures with friends.
+          </p>
+        </div>
+
         <Fade duration={1000} cascade top>
           <div className="text skill-block">
-            <div className="skill-column left">
+            <div className="skill-column">
               <div>
                 <h1>Proficient</h1>
               </div>
@@ -39,7 +69,7 @@ class AboutSection extends React.Component {
               </div>
             </div>
 
-            <div className="skill-column right">
+            <div className="skill-column">
               <div>
                 <h1>Interested</h1>
               </div>
@@ -78,7 +108,6 @@ const StyledAboutSection = styled.section `
   }
 
   .skill-block {
-    margin: calc(12px + 1vw);
     align-items: stretch;
     justify-content: space-between;
     box-sizing: border-box;
@@ -90,23 +119,34 @@ const StyledAboutSection = styled.section `
   }
 
   p {
-    font-size: calc(8px + 1vw);
+    font-size: calc(6px + 1vw);
     text-align: center;
   }
   
   h1 {
-    font-size: calc(12px + 1vw);
+    font-size: calc(10px + 1vw);
   }
 
-  .left {
-    border-top-left-radius: 10px;
-    border-right: 0px;
-    border-bottom-left-radius: 10px;
+  .desc {
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  .right {
-    border-top-right-radius: 10px;
-    border-left: 0px;
-    border-bottom-right-radius: 10px;
+
+  .life-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 0 calc(8px + 2vw) 0;
+  }
+
+  .image {
+    display: block;
+    width: calc(60px + 9vw);
+    height: 100%;
+    margin: 0 calc(8px + 2vw) 0 calc(8px + 2vw);
+    align-items: center;
+    border-width: 1px;
+    border-radius: 15px;
   }
 `
 

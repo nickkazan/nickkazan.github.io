@@ -57,6 +57,7 @@ const StyledNavbar = styled.div `
     display: block;
     padding: 15px 10px;
     margin: 0 15px;
+    outline: none;
 
     :hover {
       color: #119DA4;
