@@ -17,7 +17,10 @@ class NavBar extends React.Component {
             </Link>
             <Link to="about-me" spy={true} smooth={true}>
               <Nav.Link className="navlink">About Me</Nav.Link>
-            </Link>              
+            </Link>
+            <Link to="timeline" spy={true} smooth={true}>
+              <Nav.Link className="navlink">Timeline</Nav.Link>
+            </Link>   
             <Link to="contact" spy={true} smooth={true}>
               <Nav.Link className="navlink">Contact</Nav.Link>
             </Link>

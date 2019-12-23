@@ -7,6 +7,7 @@ import ExperienceSection from './Components/ExperienceSection';
 import Button from './Components/Button';
 import ContactSection from './Components/ContactSection';
 import AboutSection from './Components/AboutSection';
+import TimelineSection from './Components/TimelineSection';
 
 class App extends React.Component {
 
@@ -25,6 +26,7 @@ class App extends React.Component {
 
         <ExperienceSection title="Experience"/>
         <AboutSection title="About Me"/>
+        <TimelineSection title="Timeline"/>
         <ContactSection title="Let's Get In Touch"/>
 
       </Style>
