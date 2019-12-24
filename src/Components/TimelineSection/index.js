@@ -70,6 +70,17 @@ class TimelineSection extends React.Component {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'black', borderLeft: '2px solid #1400c9', borderTop: '2px solid #1400c9', borderRight: '2px solid #1400c9' }}
+            contentArrowStyle={{ borderRight: '7px solid  #1400c9' }}
+            date="October 2016"
+            iconStyle={{ background: '#1400c9', color: '#fff' }} >
+            <h3 className="vertical-timeline-element-title text-fyr">First Year Representative</h3>
+            <h6 className="vertical-timeline-element-subtitle body-text">Ottawa, Canada</h6>
+            <p className="body-text">I was voted to represent the first year Computer Science students in the Carleton Computer Science Society.</p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'black', borderLeft: '2px solid #c86dc9', borderTop: '2px solid #c86dc9', borderRight: '2px solid #c86dc9' }}
             contentArrowStyle={{ borderRight: '7px solid  #c86dc9' }}
             date="September 2016"
@@ -117,6 +128,10 @@ const StyledTimeline = styled.div `
 
   .text-cusec {
     color: #1e5939;
+  }
+
+  .text-fyr {
+    color: #1400c9;
   }
 
   .text-btc {
