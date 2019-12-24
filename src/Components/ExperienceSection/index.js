@@ -12,15 +12,15 @@ class ExperienceSection extends React.Component {
               <div className="title text">
                 {this.props.title}
               </div>
-              <Fade duration={1000} top>
+              <Fade duration={1000} left>
                 <MediaQuery maxWidth={600}>
-                  <Fade duration={1000} top>
+                  <Fade duration={1000} left>
                     <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
                   </Fade>
                 </MediaQuery>
                 <div className="job">
                   <MediaQuery minWidth={600}>
-                    <Fade duration={1000} top>              
+                    <Fade duration={1000} left>              
                       <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
                     </Fade>
                   </MediaQuery>
@@ -47,15 +47,15 @@ class ExperienceSection extends React.Component {
                 </div>
               </Fade>
 
-              <Fade duration={1000} top>
+              <Fade duration={1000} left>
                 <MediaQuery maxWidth={600}>
-                  <Fade duration={1000} top>
+                  <Fade duration={1000} left>
                     <img src={govLogo} className="logo" alt="Government_of_Canada"/>
                   </Fade>
                 </MediaQuery>
                 <div className="job">
                   <MediaQuery minWidth={600}>
-                    <Fade duration={1000} top>               
+                    <Fade duration={1000} left>               
                       <img src={govLogo} className="logo" alt="Government_of_Canada"/>
                     </Fade>
                   </MediaQuery>

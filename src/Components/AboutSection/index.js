@@ -39,7 +39,7 @@ class AboutSection extends React.Component {
           </p>
         </div>
 
-        <Fade duration={1000} cascade top>
+        <Fade duration={1000} cascade left>
           <div className="text skill-block">
             <div className="skill-column">
               <div>
