@@ -16,7 +16,7 @@ class App extends React.Component {
       <Style className="light-header">
         <section id="home" className="light-header">
           <div className="title">
-            Hi, I'm<span className="highlighted-text"> Nick Kazan </span>and I'm a Software Developer.
+            Hi, I'm <span className="highlighted-text">Nick Kazan</span> and I'm a Software Developer.
           </div>
           <Link to="experience" spy={true} smooth={true}>
             <Button text="see my experience"/>

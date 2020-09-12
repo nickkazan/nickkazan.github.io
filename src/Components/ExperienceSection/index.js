@@ -12,6 +12,45 @@ class ExperienceSection extends React.Component {
               <div className="title text">
                 {this.props.title}
               </div>
+
+              <Fade duration={1000} left>
+                <MediaQuery maxWidth={600}>
+                  <Fade duration={1000} left>
+                    <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
+                  </Fade>
+                </MediaQuery>
+                <div className="job">
+                  <MediaQuery minWidth={600}>
+                    <Fade duration={1000} left>              
+                      <img src={amazonLogo} className="logo" alt="Amazon_logo"/>
+                    </Fade>
+                  </MediaQuery>
+                  <div className="desc text">
+                    <div className="position text">
+                      Return SDE Intern
+                      <div className="date text">
+                        May 2020 - August 2020
+                      </div>
+                    </div>
+                    <div className="bullet text">
+                      Redesigned the team’s architecture to <strong>alleviate service dependencies</strong>, which minimized downtime, using mainly <strong>Java, Python, TypeScript, and SQL</strong>.
+                    </div>
+                    <div className="bullet text">
+                      Implemented an entire flow using modern services including <strong>Cloud Development Kit, Elastic Compute Cloud, Relational Database Service,
+                      Key Management Service, Secrets Manager, Lambdas, and Virtual Private Cloud</strong>.
+                    </div>
+                    <div className="bullet text">
+                      Guaranteed code quality using modern <strong>testing methodologies including unit and integration</strong>.
+                    </div>
+                    <div className="bullet text">
+                      Created a pipeline that automatically pulled code from various dependencies and tested each stage (test, prod, and sandbox). I was able
+                      to see my code in production that impacted <strong>millions of requests daily</strong>.
+                    </div>
+                  </div>
+                </div>
+              </Fade>
+
+
               <Fade duration={1000} left>
                 <MediaQuery maxWidth={600}>
                   <Fade duration={1000} left>
@@ -32,16 +71,16 @@ class ExperienceSection extends React.Component {
                       </div>
                     </div>
                     <div className="bullet text">
-                      Built, tested, and deployed a self-service portal for clients to manage users.
+                    <strong>Built, tested, and deployed</strong> a self-service portal for clients to manage users.
                     </div>
                     <div className="bullet text">
-                      Improved the speed of on-boarding corporate clients by 22%, while also reducing user management support contacts by 47%.
+                      Improved the speed of on-boarding corporate clients by <strong>22%</strong>, while also reducing user management support contacts by <strong>47%</strong>.
                     </div>
                     <div className="bullet text">
-                      Designed a long-term, scalable architecture using many modern services.                  
+                      Designed a <strong>long-term, scalable architecture</strong> using many modern services.                  
                     </div>
                     <div className="bullet text">
-                      Some of the services used include: AWS KMS, DynamoDB, SQS, SNS, etc.
+                      Some of the services used include: <strong>Key Management Service, DynamoDB, Simple Queue Service, and Simple Notification Service.</strong>
                     </div>
                   </div>
                 </div>
@@ -67,13 +106,10 @@ class ExperienceSection extends React.Component {
                       </div>
                     </div>
                     <div className="bullet text">
-                      Fixed ongoing client issues leading to a smoother experience in our Fall Release.
+                      Fixed ongoing client issues leading to a <strong>smoother experience</strong> in our Fall Release.
                     </div>
                     <div className="bullet text">
-                      Created software to organize all current client requests which improved efficiency by 30%.
-                    </div>
-                    <div className="bullet text">
-                      Refactored and redesigned older code.
+                      Created software to organize all current client requests which improved efficiency by <strong>30%</strong>.
                     </div>
                   </div>
                 </div>
