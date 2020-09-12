@@ -1,23 +1,35 @@
 {
   "files": {
     "main.css": "/static/css/main.f1ff7977.chunk.css",
-    "main.js": "/static/js/main.6fd71f75.chunk.js",
-    "main.js.map": "/static/js/main.6fd71f75.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.8b8fb827.js",
-    "runtime~main.js.map": "/static/js/runtime~main.8b8fb827.js.map",
-    "static/css/2.a641e29a.chunk.css": "/static/css/2.a641e29a.chunk.css",
-    "static/js/2.f817d1f4.chunk.js": "/static/js/2.f817d1f4.chunk.js",
-    "static/js/2.f817d1f4.chunk.js.map": "/static/js/2.f817d1f4.chunk.js.map",
+    "main.js": "/static/js/main.6e157198.chunk.js",
+    "main.js.map": "/static/js/main.6e157198.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.24816141.js",
+    "runtime-main.js.map": "/static/js/runtime-main.24816141.js.map",
+    "static/css/2.f681e662.chunk.css": "/static/css/2.f681e662.chunk.css",
+    "static/js/2.4c876d2f.chunk.js": "/static/js/2.4c876d2f.chunk.js",
+    "static/js/2.4c876d2f.chunk.js.map": "/static/js/2.4c876d2f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ce97ad8e0d736cc60d20c43ccc843e07.js": "/precache-manifest.ce97ad8e0d736cc60d20c43ccc843e07.js",
+    "precache-manifest.050d375df3a037010927b581ba0610ef.js": "/precache-manifest.050d375df3a037010927b581ba0610ef.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.a641e29a.chunk.css.map": "/static/css/2.a641e29a.chunk.css.map",
+    "static/css/2.f681e662.chunk.css.map": "/static/css/2.f681e662.chunk.css.map",
     "static/css/main.f1ff7977.chunk.css.map": "/static/css/main.f1ff7977.chunk.css.map",
+    "static/js/2.4c876d2f.chunk.js.LICENSE.txt": "/static/js/2.4c876d2f.chunk.js.LICENSE.txt",
     "static/media/black-amazon-logo.png": "/static/media/black-amazon-logo.b9205457.png",
     "static/media/black_gov_of_canada.png": "/static/media/black_gov_of_canada.377b77d1.png",
     "static/media/pic1.jpg": "/static/media/pic1.f6d2548e.jpg",
     "static/media/pic2.JPG": "/static/media/pic2.e19c76b7.JPG",
     "static/media/pic3.JPG": "/static/media/pic3.998a2684.JPG",
-    "static/media/pic4.jpg": "/static/media/pic4.02838ebb.jpg"
-  }
+    "static/media/pic4.jpg": "/static/media/pic4.02838ebb.jpg",
+    "static/media/pic5.jpg": "/static/media/pic5.11099167.jpg",
+    "static/media/pic6.jpg": "/static/media/pic6.dd5175ed.jpg",
+    "static/media/pic7.jpg": "/static/media/pic7.84299312.jpg",
+    "static/media/pic8.JPG": "/static/media/pic8.00dec934.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24816141.js",
+    "static/css/2.f681e662.chunk.css",
+    "static/js/2.4c876d2f.chunk.js",
+    "static/css/main.f1ff7977.chunk.css",
+    "static/js/main.6e157198.chunk.js"
+  ]
 }
